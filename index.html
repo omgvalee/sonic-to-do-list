@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content=""width=devide-width, initial-scale="1">
+        <title>To-Do List App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+   <body>
+    <div class="container">
+        <div class="todo-app">
+            <div id="h2div">
+            <h2>To-Do List <img src="images/sonic-sonic-running.gif" 
+                width="40"
+                height="40"></h2>
+            </div>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text" maxlength="45">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div>
+                 <ul id="list-container">
+                     <!-- <li class="checked"> Task 1</li>
+                     <li>Task 2</li>
+                     <li>Task 3</li> -->
+                 </ul>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.log('Service Worker registration failed:', error);
+            });
+        }
+      </script>
+   </body> 
+</html>

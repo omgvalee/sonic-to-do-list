@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {    
+    opacity: 90%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/thumb-1920-420338.jpg);
+    padding: 10px;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 1000px;
+    width: 670px;
+    height: 370px;
+    background-image: url(images/Todolist.png);
+    background-size: 670px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    padding-right: 360px;
+    border-radius: 30px;
+}
+#h2div{
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+.todo-app h2{
+    color:#0054c9;
+    display: flex;
+    align-items: start;
+    margin-top: 4px; 
+    margin-bottom: 2px;
+    font-size: 40px;
+}
+.todo-app h2 img{
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dedede;
+    max-width: 530px;
+    width: 330px;
+    height: 35px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: #006aff;
+    padding:9px 50px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 12px 8px 20px;
+    user-select: none;
+    cursor: pointer;
+    height: 35px;
+    width: 360px;
+    border-radius: 0%;
+    background-position: center;
+    background-image: url(images/Todolist.creado.png) ;
+    background-size: 460px;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 20px;
+    border-radius: 0%;
+    background-position: center;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    background-image: url(images/Todolist.hecho.png);
+    width: 382px;
+}
+
+ul li span{
+    position: absolute;
+    left: 300px;
+    right: 0;
+    top: 13.5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 10px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: transparent;
+    height: 17px;
+}
+
+
+
+
+
+
